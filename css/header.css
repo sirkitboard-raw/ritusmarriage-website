@@ -1,6 +1,18 @@
-body {
+html, body {
 	margin: 0 0;
 	padding: 0 0;
+	min-height: 100%;
+	height: 100%;
+}
+
+@font-face {
+	font-family: PlutoSansRegular;
+	src: url(../fonts/pluto.ttf);
+}
+
+@font-face {
+	font-family: MuseoSans-300;
+	src: url(../fonts/museo.ttf);
 }
 
 div.header {
@@ -17,10 +29,11 @@ div.headerInner {
 
 }
 
-div.mainBody {
+div.mainBodyWrapper {
 	width: 100%;
-	height: 100%;
+	min-height: calc(100% - 141px);
 	background: url(../img/background.jpg);
+	background-size: 100%;
 }
 
 h1.header {
@@ -76,39 +89,47 @@ div.nav {
 	letter-spacing: 0.1em;
 	font-family: 'PlutoSansRegular', sans-serif;
 	margin: 0 1em;
-	padding-bottom: 8px;
-	transition: 0.3s ease-in;
-	transition-property: border, padding-bottom;
-	border-bottom: 1px solid #FFFFFF;
 }
-.nav ul li a {
-	text-decoration: none;
-	color:#000000;
-}
+/*.nav ul li a {*/
+	/*text-decoration: none;*/
+	/*color:#000000;*/
+/*}*/
 
-.nav ul li:hover {
-	padding-bottom: 2px;
-	border-bottom: 1px solid #000000;
-}
-
-
-
-/*.nav ul li a:before {*/
-	/*content: "";*/
-	/*position: absolute;*/
-	/*width: 100%;*/
-	/*height: 3px;*/
-	/*top: 0;*/
-	/*left: 0;*/
-	/*margin: auto;*/
+/*.nav ul li:hover {*/
+	/*padding-bottom: 2px;*/
 	/*border-bottom: 1px solid #000000;*/
-	/*transition: all 1s ease-in;*/
-	/*transform: scaleX(0);*/
 /*}*/
 
-/*.nav ul li a:hover:before {*/
-	/*transform: scaleX(1);*/
-/*}*/
+.nav ul li a {
+	position: relative;
+	text-decoration: none;
+	color :#000000
+}
+
+.nav ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	top: 11px;
+	left: 0;
+	margin: auto;
+	border-bottom: 1px solid #000000;
+	transition: all 0.4s ease-in;
+	transform: scaleX(0);
+}
+
+.nav ul li a:hover:before {
+	transform: scaleX(1);
+}
+
+div.footer {
+	position:fixed;
+	bottom:0;
+	background: #888888;
+	height: 100px;
+	width: 100%;
+}
 
 
 
