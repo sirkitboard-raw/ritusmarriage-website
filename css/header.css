@@ -15,6 +15,11 @@ html, body {
 	src: url(../fonts/museo.ttf);
 }
 
+@font-face {
+	font-family: Rollerscript-Smooth;
+	src: url(../fonts/roller.ttf);
+}
+
 div.header {
 	margin: 0;
 	width: 100%;

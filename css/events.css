@@ -1,0 +1,217 @@
+div.mainBody {
+	min-width: 1000px;
+	width:65%;
+	height: 700px;
+	background: #FFFFFF;
+	-moz-box-shadow: 0 10px 14px -7px #4f4f4f;
+	-webkit-box-shadow: 0 10px 14px -7px #4f4f4f;
+	box-shadow: 0 10px 14px -7px #4f4f4f;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	background: rgba(225, 170, 164, 0.85);
+}
+
+.mainBody h3 {
+	font-family: 'Rollerscript-Smooth';
+	padding: 40px 0 0 20px;
+	font-size: 26px;
+	text-indent: 24px;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	font-weight: lighter;
+}
+
+.mainBody ul{
+	list-style: none;
+	text-transform: uppercase;
+	line-height: 22px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 40px;
+	font-family: 'PlutoSansRegular', sans-serif;
+}
+
+.mainBody ul li {
+	padding-bottom: 10px;
+}
+
+.mainBody ul li a {
+	position: relative;
+	text-decoration: none;
+	color :#FFFFFF;
+}
+
+.mainBody ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	top: 11px;
+	left: 0;
+	margin: auto;
+	border-bottom: 1px solid #FFFFFF;
+	transition: all 0.3s ease-in;
+	transform: scaleX(0);
+}
+
+.mainBody ul li a:hover:before {
+	transform: scaleX(1);
+}
+
+.eventsList {
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+
+.detailsBox {
+	width: 30%;
+	float: left;
+	display: inline-block;
+	background: rgba(248, 248, 248, 1);
+	height: 100%;
+}
+
+p#eventName {
+	font-family: 'Rollerscript-Smooth';
+	padding: 40px 0 0 0;
+	font-size: 26px;
+	text-indent: 24px;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	color: #e1aaa4;
+	text-align: center;
+	position: relative;
+	left: -3%;
+}
+
+p#eventDay {
+	font-family: Helvetica,Arial,sans-serif;
+	margin-top: 32px;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+p#eventDate {
+	font-size: 30px;
+	line-height: 30px;
+	font-family: Helvetica,Arial,sans-serif;
+	text-align: center;
+	padding: 0 0;
+	margin: 0 0;
+	color: #000000;
+}
+
+p#eventYear {
+	font-family: Helvetica,Arial,sans-serif;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+p#eventTime {
+	display: block;
+	clear: left;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 15px 0;
+	min-width: 200px;
+	width: 66%;
+	margin: 20px auto;
+	font-size: 12px;
+	line-height: 0;
+	font-family: Helvetica,Arial, sans-serif;
+	text-align: center;
+}
+
+p#eventAddress {
+	display: block;
+	clear: left;
+	padding: 15px 0;
+	font-size: 11px;
+	min-width: 200px;
+	width: 66%;
+	margin: 20px auto;
+	line-height: 16px
+	font-family: Helvetica,Arial, sans-serif;
+	text-align: left;
+	font-family: 'MuseoSans-300',sans-serif;
+}
+
+a#mapLink {
+	display: block;
+	clear: left;
+	padding: 15px 0;
+	font-size: 11px;
+	min-width: 200px;
+	width: 66%;
+	margin: 20px auto 0 auto;
+	line-height: 16px;
+	border-top: 1px solid #e7e7e7;
+	font-family: 'PlutoSansRegular', sans-serif;
+	text-transform: uppercase;
+	color: #e1aaa4;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+div.newWindowIcon {
+	display: inline-block;
+	float: left;
+	background:url(../img/nw.png)  center no-repeat;
+}
+
+a#mapLink:hover {
+	text-decoration: underline;
+}
+
+div.mapIcon {
+	background: url(../img/map.png) no-repeat 50% 50%;
+	background-size: 90%;
+	border: 5px solid rgba(0,0,0,0.05);
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	margin: 10px auto;
+	transition: all 0.2s ease-in-out 0s;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+}
+
+div.mapIcon:hover {
+	border: 5px solid rgba(0,0,0,0.15);
+}
+
+.scheduleBox {
+	width: 40%;
+	float: left;
+	display: inline-block;
+	background: rgba(255,255,255,1);
+	height: 100%;
+}
+
+p#scheduleTitle {
+	font-size: 11px;
+	padding: 50px 0 0 40px;
+	margin: 30px 0;
+	font-family: 'PlutoSansRegular', sans-serif;
+	color: #e1aaa4;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+p#schedule {
+	font-family: 'MuseoSans-300',sans-serif;
+	line-height: 18px;
+	font-size: 13px;
+	margin: 0 40px 0 40px;
+	padding: 10px 0 0 0;
+	height: 35%;
+	border-bottom: 1px solid #e7e7e7;
+}
