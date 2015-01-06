@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<title> Ritu and Bharat's Wedding </title>
 	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
 </head>
 
 <body>
@@ -22,8 +25,42 @@
 		</ul>
 	</div>
 </div>
-<div class="mainBody">
-	&nbsp;
+<div class="mainBodyWrapper">
+	<div class="mainBody">
+		<div class="contactNavWrapper">
+			<div class="contactNav">
+				<a id="navLink1" onclick="bride();document.getElementById('underline').style.marginLeft = '75px';" href="#">Bride's Family</a> &emsp;&emsp;
+				<a id="navLink2" onclick="groom();document.getElementById('underline').style.marginLeft = '263px';" href="#">Groom's Family</a>
+				<hr id="underline" class="underlineAnimate">
+			</div>
+		</div>
+		<div class="contactList" style="position: relative">
+			<div id="brideList" style="position: absolute;top: 0">
+				<ul>
+					<li onclick="loadJagdish(this)" style="background: rgba(255,255,255,1)"><img src="img/dad-icon.png"><p>Jagdish Balwani</p></li>
+					<li onclick="loadShobha(this)"><img src="img/mom-icon.png"><p>Shobha Balwani</p></li>
+					<li onclick="loadAdi(this);"><img src="img/adi-icon.png"><p>Aditya Balwani</p></li>
+					<li onclick="loadManohar(this)"><img src="img/star.PNG"><p>Manohar Rajdev</p></li>
+				</ul>
+			</div>
+			<div id="groomsList" style="position: absolute;top: 0;display: none;width: 100%">
+				<ul>
+					<li onclick="loadAmit(this)"><img src="img/star.PNG"><p>Amit Agarwal</p></li>
+					<li onclick="loadMalvika(this)"><img src="img/star.PNG"><p>Malvika Agarwal</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="contactBox">
+			<div id="contactPic"></div>
+			<p id="contactName">Jagdish Balwani</p>
+			<table>
+			<tr>
+				<td><p id="contactInfo">Mobile : +919810044417 </p></td>
+				<td><a id="contactLink" href="tel:+919810044417"><span id="contactButton">Call</span></a></td>
+			</tr>
+			</table>
+		</div>
+	</div>
 </div>
 </body>
 </html>

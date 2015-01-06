@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title> Ritu and Bharat's Wedding </title>
 	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/countdown.css"/>
+	<script type="text/javascript" src="js/countdown.min.js"></script>
 </head>
 
 <body>
@@ -22,8 +24,43 @@
 		</ul>
 	</div>
 </div>
-<div class="mainBody">
-	&nbsp;
+<div class="mainBodyWrapper">
+	<div class="mainBody">
+		<h3 class="countdownHeader">Countdown To Our Big Day!</h3>
+		<div id="days">
+			<div id="daysNum" class="number">00</div>
+			<div class="type">Days</div>
+		</div>
+		<div id="hours">
+			<div id="hoursNum" class="number">00</div>
+			<div class="type">Hours</div>
+		</div>
+		<div id="minutes">
+			<div id="minsNum" class="number">00</div>
+			<div class="type">Minutes</div>
+		</div>
+		<div id="seconds">
+			<div id="secsNum" class="number">00</div>
+			<div class="type">Seconds</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var wedding = new Date('January 25, 2015 20:00:00');
+		var days = document.getElementById("daysNum");
+		var minutes = document.getElementById("minsNum");
+		var hours = document.getElementById("hoursNum");
+		var secs = document.getElementById("secsNum");
+		secs.innerHTML = countdown(wedding).seconds.toString();
+		days.innerHTML = countdown(wedding).days.toString();
+		hours.innerHTML = countdown(wedding).hours.toString();
+		minutes.innerHTML = countdown(wedding).minutes.toString();
+		setInterval(function(){
+			days.innerHTML = countdown(wedding).days.toString();
+			hours.innerHTML = countdown(wedding).hours.toString();
+			minutes.innerHTML = countdown(wedding).minutes.toString();
+			secs.innerHTML = countdown(wedding).seconds.toString();
+		}, 1000);
+	</script>
 </div>
 </body>
 </html>

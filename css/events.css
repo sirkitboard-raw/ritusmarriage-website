@@ -18,7 +18,7 @@ div.mainBody {
 	text-indent: 24px;
 	letter-spacing: 1px;
 	color: #FFFFFF;
-	font-weight: lighter;
+	font-weight: normal;
 }
 
 .mainBody ul{
@@ -126,6 +126,7 @@ p#eventTime {
 	line-height: 0;
 	font-family: Helvetica,Arial, sans-serif;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 p#eventAddress {
