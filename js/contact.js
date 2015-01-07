@@ -65,6 +65,27 @@ function loadMalvika(clicked) {
 	$(clicked).css("background","rgba(255,255,255,1");
 }
 
+function loadHari(clicked) {
+	document.getElementById("contactName").innerHTML = "Hari Om Agarwal";
+	document.getElementById("contactInfo").innerHTML = "Mobile : +918130650009";
+	document.getElementById("contactLink").href = "tel:+918130650009";
+	document.getElementById("contactButton").innerHTML = "Call";
+	document.getElementById("contactPic").style.background = "url(img/star-2.png) no-repeat";
+	document.getElementById("contactPic").style.backgroundSize = "contain";
+	$(".contactList ul li").css("background","rgba(255,255,255,0.8");
+	$(clicked).css("background","rgba(255,255,255,1");
+}
+
+function loadMona(clicked) {
+	document.getElementById("contactName").innerHTML = "Mona Agarwal";
+	document.getElementById("contactInfo").innerHTML = "Mobile : +919871002559";
+	document.getElementById("contactLink").href = "tel:+919871002559";
+	document.getElementById("contactButton").innerHTML = "Call";
+	document.getElementById("contactPic").style.background = "url(img/star-2.png) no-repeat";
+	document.getElementById("contactPic").style.backgroundSize = "contain";
+	$(".contactList ul li").css("background","rgba(255,255,255,0.8");
+	$(clicked).css("background","rgba(255,255,255,1");
+}
 
 function bride() {
 	$("#brideList").fadeIn(300);
