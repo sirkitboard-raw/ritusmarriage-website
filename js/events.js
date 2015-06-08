@@ -9,7 +9,7 @@ function setDataWedding() {
 	document.getElementById("eventAddress").innerHTML = "Crystal Carnation,<br>	Mapple Emerald,<br>	Jaipur National Highway (NH 8), Rajokri, <br>	New Delhi <br>	India, 110038";
 	document.getElementById("mapLink").href = "https://www.google.co.in/maps/place/Mapple/@28.515227,77.094076,17z/data=!3m1!4b1!4m2!3m1!1s0x390d1bfe4fdeeac1:0x34beed0a9de74590?hl=en";
 	document.getElementById("mapLinkImage").href = "https://www.google.co.in/maps/place/Mapple/@28.515227,77.094076,17z/data=!3m1!4b1!4m2!3m1!1s0x390d1bfe4fdeeac1:0x34beed0a9de74590?hl=en";
-	document.getElementById("schedule").innerHTML = "	Gud Chadi : 7:00pm <br>	Departure of Barat : 7:30pm<br>Reception of Barat : 8:00pm <br>	Followed by Jaimala and Dinner : 8:30pm onwards";
+	document.getElementById("schedule").innerHTML = "	Ghud Chadi : 7:00pm <br>	Departure of Barat : 7:30pm<br>Reception of Barat : 8:00pm <br>	Followed by Jaimala and Dinner : 8:30pm onwards";
 }
 
 function setDataPathSahib() {

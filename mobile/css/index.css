@@ -1,0 +1,402 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background:url(../img/background.png) repeat;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    margin:0;
+    width:100%;
+    height:100%;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0;
+    overflow:visible;
+    padding:0;
+    text-align:center;
+}
+
+#header-wrapper {
+    margin: 1em auto;
+    padding: 1em 0;
+    height: auto;
+    width: 100%;
+    background-color: #d7d2cd;
+}
+
+#header-wrapper-inner {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    padding:1em 0;
+    background-color: #f5f2ef;
+}
+
+#header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+#welcome {
+    height: auto;
+    margin: 3vh 0;
+    text-align: center;
+    font-size: 3vh;
+    color:#FFFFFF;
+}
+
+#welcome-box-wrapper {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding:1em;
+    background-color: #d7d2cd;
+}
+
+#welcome-box {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding:1em;
+    background-color: #f5f2ef;
+}
+
+#welcome-image {
+    width: 70%;
+    height: auto;
+    margin: 1vh auto;
+}
+
+#welcome-image img {
+    width: 100%;
+    height: auto;
+}
+
+#welcome-text {
+    width: 85%;
+    margin: 2vh auto;
+    text-align: center;
+    font-size: 2.5vh;
+    color:#000000;
+}
+
+#next-image {
+    width: 15%;
+    height: auto;
+    margin: auto;
+}
+
+#next-image img {
+    width: 100%;
+    height: auto;
+}
+
+.mainMenu {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.menuButton a {
+    text-decoration: none;
+    color : #FFFFFF;
+}
+
+.menuButton {
+    -moz-box-shadow: 0px 10px 14px -7px #4f4f4f;
+    -webkit-box-shadow: 0px 10px 14px -7px #4f4f4f;
+    box-shadow: 0px 10px 14px -7px #4f4f4f;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0c495), color-stop(1, #998340));
+    background:-moz-linear-gradient(top, #f0c495 5%, #998340 100%);
+    background:-webkit-linear-gradient(top, #f0c495 5%, #998340 100%);
+    background:-o-linear-gradient(top, #f0c495 5%, #998340 100%);
+    background:-ms-linear-gradient(top, #f0c495 5%, #998340 100%);
+    background:linear-gradient(to bottom, #f0c495 5%, #998340 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c495', endColorstr='#998340',GradientType=0);
+    background-color:#f0c495;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+    margin:3vh auto 3vh auto;
+}
+.menuButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #998340), color-stop(1, #f0c495));
+    background:-moz-linear-gradient(top, #998340 5%, #f0c495 100%);
+    background:-webkit-linear-gradient(top, #998340 5%, #f0c495 100%);
+    background:-o-linear-gradient(top, #998340 5%, #f0c495 100%);
+    background:-ms-linear-gradient(top, #998340 5%, #f0c495 100%);
+    background:linear-gradient(to bottom, #998340 5%, #f0c495 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#998340', endColorstr='#f0c495',GradientType=0);
+    background-color:#998340;
+}
+.menuButton:active {
+    position:relative;
+    top:1px;
+}
+
+li p {
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 2vh;
+}
+
+.box {
+    width: 98%;
+    margin: 2vh auto;
+    height: auto;
+    background-color: #f5f2ef;
+    border: 1px solid #998340;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 32px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 32px -4px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 32px -4px rgba(0,0,0,0.75);
+    padding: 1.5vh 0;
+}
+
+.box .title {
+    margin: 1vh 2vh;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #993333;
+}
+
+.box table {
+    width: 100%;
+}
+
+.box .callButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    cursor:pointer;
+    color:#666666;
+    text-shadow:0px 1px 0px #ffffff;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+.box .callButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+    background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+    background-color:#f6f6f6;
+}
+.box .callButton:active {
+    position:relative;
+    top:1px;
+}
+
+.box table {
+    margin: 1vh 0;
+}
+
+.box .callButton img {
+    width: 80%;
+    height: auto;
+}
+
+.box .subtitle {
+    padding: 1vh 2vh 0 3vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #993333;
+    width: 75%;
+}
+
+.box .number {
+    padding: 1vh 2vh 0 3vh;
+    font-size: 2vh;
+    color: #000000;
+}
+
+hr {
+    clear: both;
+    float: none;
+    width: 90%;
+    height: 2px;
+    margin: 1.4em auto;
+    border: none;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0.5, rgb(221,221,221)),
+            color-stop(0.5, rgb(255,255,255))
+    );
+}
+
+.box .mapButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+
+}
+.box .mapButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+    background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+    background-color:#f6f6f6;
+}
+.box .mapButton:active {
+    position:relative;
+    top:1px;
+}
+
+.mainMenuTable {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.menuImage {
+    height: 10vh;
+    width: auto;
+    margin: 1vh 0 0 0;
+}
+
+.menuClass {
+    font-size: 3vh;
+    color: #FFFFFF;
+    margin: 1.1vh 0;
+}
+
+.countdown {
+    width: 100%;
+    text-align: center;
+}
+
+.countdownTime {
+    font-size: 4vh;
+}
+
+.countdownText {
+    font-size: 2vh;
+}
+
+.countdownCell {
+    border-right: 2px solid #FFFFFF;
+}
+
+.story {
+    margin: 1vh 2vh;
+    font-size: 2.5vh;
+    text-align: justify;
+}
+
+.mainMenuCell {
+    width: 50%;
+    padding : 1vh 0;
+}
+
+.mainMenuRow {
+    margin: 3vh 1vh;
+}
+
+.mainMenuCell:active {
+    position:relative;
+    top:0.3vh;
+    background-color: rgba(60,60,60,0.2);
+    border-color: #FFFFFF;
+    border-radius: 30px;
+    border-width: 1px;
+}
+
+div.maker {
+    width: 83%;
+    margin: auto;
+    height: auto;
+    padding: 0 0;
+}
+
+p.maker {
+    width: 100%;
+    font-size: 1.5vh;
+    color: #FFFFFF;
+    text-align: right;
+    margin-right: 0;
+}
+

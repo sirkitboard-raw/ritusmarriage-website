@@ -4,10 +4,12 @@
 	<meta charset="utf-8">
 	<title> Ritu and Bharat's Wedding </title>
 	<link rel="stylesheet" type="text/css" href="css/header.css"/>
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/ourstory.css"/>
+	<script type="text/javascript" src="js/story.js"></script>
+	<script type="text/javascript" src="js/detectmobilebrowser.js"></script>
 </head>
 
-<body>
+<body onresize="wrapperResize();">
 <div class="header">
 	<div class="headerInner">
 		<h1 class="header">Bharat and Ritu's Wedding</h1>
@@ -24,9 +26,26 @@
 	</div>
 </div>
 <div class="mainBodyWrapper">
-	<div class="mainBody">
-		&nbsp;
+	<div id="mainBodyDiv" class="mainBody">
+		<p>
+			The naughty fun loving Lucknawi Boy laid eyes on a Simple Pretty Delhi girl, and it was love at first sight. However, fate had other plans. The girl had to fly saat samundar paar. But when she came back, by the grace of "Jesus Christ Ki Roshni" things moved and they decided to date.
+			<br><br>
+			The unusual love story that it was, the families got engaged but the kids didn’t, very “do kapdon mein ladki bhejo, ladki hui hamari. Ladki had too many nakhras and wanted a formal proposal. So on November 24, 2013 he finally slipped a ring and promised an unlimited supply of shampoo. Well we all know what happens next, doll ki doli is all set to go to her Sasural.
+
+		</p>
 	</div>
 </div>
+
+<script type="text/javascript">
+	var wrapper = document.getElementById("mainBodyDiv");
+	wrapper.addEventListener("resize", wrapperResize());
+	function wrapperResize() {
+		console.log(wrapper.offsetWidth);
+		wrapper.style.height = (wrapper.offsetWidth / 2)+"px";
+		console.log("Resized");
+	}
+
+	wrapperResize();
+</script>
 </body>
 </html>

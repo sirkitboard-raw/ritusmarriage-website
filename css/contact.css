@@ -1,5 +1,5 @@
 div.mainBody {
-	min-width: 1000px;
+	min-width: 1020px;
 	width:75%;
 	height: 500px;
 	background: #FFFFFF;
@@ -76,9 +76,12 @@ hr.underlineAnimate {
 .contactList ul li p {
 	font-size: 11px;
 	float: left;
+	text-align: center;
 	font-family: PlutoSansRegular,sans-serif;
 	padding-left: 20px;
 	margin: 9px 5px;
+	text-wrap: normal;
+	width: 50%;
 }
 
 .contactBox {

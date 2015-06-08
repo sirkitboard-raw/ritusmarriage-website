@@ -1,0 +1,23 @@
+div#mainBodyDiv {
+	min-width: 1000px;
+	width: 75%;
+	height: 500px;
+	background: #FFFFFF;
+	-moz-box-shadow: 0 10px 14px -7px #4f4f4f;
+	-webkit-box-shadow: 0 10px 14px -7px #4f4f4f;
+	box-shadow: 0 10px 14px -7px #4f4f4f;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	background: url(../img/storyback.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+div#mainBodyDiv p{
+	width: 50%;
+	text-align: center;
+	margin: 25% auto 0 auto;
+	color: #ffffff;
+	font-size: 2vh;
+	font-family: PlutoSansRegular, sans-serif;
+}
